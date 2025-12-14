@@ -2,14 +2,18 @@
 node_modules
 /.pnp
 .pnp.js
+jspm_packages/
 
 # Testing
 /coverage
+*.lcov
+.nyc_output
 
 # Next.js
 /.next/
 /out/
 .next
+out
 
 # Production
 /build
@@ -18,8 +22,8 @@ dist
 # Misc
 .DS_Store
 *.pem
-
-# Debug
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -27,6 +31,8 @@ yarn-error.log*
 # Local env files
 .env*.local
 .env
+.env.*
+!.env.example
 
 # Vercel
 .vercel
@@ -34,3 +40,10 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode-test
+
+# Cache
+.cache
+.parcel-cache
