@@ -69,7 +69,7 @@ export default function Hero() {
         </div>
 
         {/* Social Links - Mobile: inline with content, Desktop: absolute left */}
-        <div className="flex lg:flex-col gap-4 lg:gap-2.5 ml-0 lg:ml-24 animate-fade-in-up animate-delay-1100 lg:absolute lg:left-6 xl:left-10 lg:bottom-20">
+        <div className="flex lg:flex-col gap-4 lg:gap-2.5 ml-0 animate-fade-in-up animate-delay-1100 lg:absolute lg:left-6 xl:left-12 lg:bottom-12">
           {socialLinks.map((social) => (
             <a
               key={social.name}
